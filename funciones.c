@@ -68,4 +68,5 @@ void buscarProducto(char productos[10][20], float precios[10]) {
     if (!encontrado) {
         printf("Producto no encontrado.\n");
     }
+    
 }

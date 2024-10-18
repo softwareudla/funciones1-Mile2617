@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 #include "funciones.h"
 
 
@@ -11,6 +10,6 @@ int main() {
     calculos(nombproducto, precios);
     buscarProducto(nombproducto, precios);
 
-    getch();
+
     return 0;
 }
