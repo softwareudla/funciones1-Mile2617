@@ -4,17 +4,13 @@
 
 
 int main() {
-   char nombproducto[10][20];
+    char nombproducto[10][20];
     float precios[10];
-    void inventario(char (*productos)[20], float *precios);
-    void calculos(char (*productos)[20], float *precios);
-    void buscarproducto(char (*productos)[20], float *precios);
 
+    inventario(nombproducto, precios);
+    calculos(nombproducto, precios);
+    buscarProducto(nombproducto, precios);
 
-    
     getch();
-
-    
     return 0;
-
 }
