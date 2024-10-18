@@ -10,5 +10,8 @@ int main() {
     void calculos(char (*productos)[20], float *precios);
     void buscarproducto(char (*productos)[20], float *precios);
     getch();
+    
+    
     return 0;
+
 }
