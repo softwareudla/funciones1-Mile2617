@@ -45,7 +45,7 @@ void calculos(char productos[10][20], float precios[10]) {
 
     printf("\nPrecio maximo del Inventario es: %.2f que le corresponde al producto: %s\n", maxprecio, productos[productoMax]);
     printf("Precio minimo del Inventario es: %.2f que le corresponde al producto: %s\n", minprecio, productos[productoMin]);
-    printf("El valor total del Inventario es: %.2f\n", suma);
+    printf("Total del inventario: %.2f\n", suma);
     printf("El promedio del Inventario es: %.2f\n", suma / 10);
 }
 
@@ -68,5 +68,5 @@ void buscarProducto(char productos[10][20], float precios[10]) {
     if (!encontrado) {
         printf("Producto no encontrado.\n");
     }
-    
+
 }
