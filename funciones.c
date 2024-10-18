@@ -49,7 +49,7 @@ void calculos(char productos[][20], float precios[]) {
     printf("El promedio del Inventario es: %.2f\n", suma / 10);
 }
 
-void buscarProducto(char productos[][20], float precios[]) {
+void buscarproducto(char productos[][20], float precios[]) {
     char nombreBuscado[20];
     int encontrado = 0;
 
