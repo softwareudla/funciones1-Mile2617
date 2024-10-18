@@ -6,10 +6,9 @@
 int main() {
     char nombproducto[10][20];
     float precios[10];
-    inventario(nombproducto, precios);
-    calculos(nombproducto, precios);
-    buscarproducto(nombproducto, precios);
-
+    void inventario(char (*productos)[20], float *precios);
+    void calculos(char (*productos)[20], float *precios);
+    void buscarproducto(char (*productos)[20], float *precios);
     getch();
     return 0;
 }
