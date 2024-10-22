@@ -21,6 +21,7 @@ int main() {
     buscarProducto(productos, precios, cantidad, productoBuscar); 
     do
     {
+        printf("\n ");
         printf("Si quiere buscar un nuevo producto escriba 1, si quiere salir del programa escriba 0: ");
         scanf("%d", &repetir);
         if (repetir != 0 && repetir != 1) {
