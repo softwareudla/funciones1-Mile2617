@@ -6,17 +6,30 @@ int main() {
     float precios[10];
     int cantidad[10];
     char productoBuscar[40]; 
+    int repetir;
+    
 
-    inventario(productos, precios, cantidad);  
-    calculos(productos, precios, cantidad); 
-
+    inventario(productos, precios, cantidad);
     for (int i = 0; i < 10; i++) {
         imprimirProductos(productos, precios, cantidad, i);
-    }
+    }  
+    calculos(productos, precios, cantidad); 
 
 
-
-    buscarProducto(productos, precios, cantidad, productoBuscar);  
+  do
+{
+    buscarProducto(productos, precios, cantidad, productoBuscar); 
+    do
+    {
+        printf("Si quiere buscar un nuevo producto escriba 1, si quiere salir del programa escriba 0: ");
+        scanf("%d", &repetir);
+        if (repetir != 0 && repetir != 1) {
+            printf("El dato ingresado es incorrecto, ingrese 1 o 0.\n");
+        }
+    } while (repetir != 0 && repetir != 1); 
+} while (repetir == 1); 
+        
+     
 
     return 0;
 }

@@ -70,7 +70,7 @@ void buscarProducto(char productos[10][40], float precios[10], int cantidad[10],
      
     for (int i = 0; i < 10; i++) {
         if (strcmp(productos[i], productoBuscar) == 0) {
-          printf("#\t\tNombre\t\tPrecio Unitario\t\tCantidad\n");
+          //printf("#\t\tNombre\t\tPrecio Unitario\t\tCantidad\n");
             imprimirProductos(productos, precios, cantidad, i);
             noencontrado = 1;
             break;
