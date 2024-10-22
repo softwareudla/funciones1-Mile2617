@@ -1,15 +1,21 @@
 #include <stdio.h>
 #include "funciones.h"
 
-
 int main() {
-    char nombproducto[10][20];
+    char productos[10][40];
     float precios[10];
+    int cantidad[10];
+    char productoBuscar[40]; 
 
-    inventario(nombproducto, precios);
-    calculos(nombproducto, precios);
-    buscarProducto(nombproducto, precios);
+    inventario(productos, precios, cantidad);  
+    calculos(productos, precios, cantidad); 
 
+    for (int i = 0; i < 10; i++) {
+        imprimirProductos(productos, precios, cantidad, i);
+    }
+
+
+    buscarProducto(productos, precios, cantidad, productoBuscar);  
 
     return 0;
 }
