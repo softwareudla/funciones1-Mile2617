@@ -3,6 +3,7 @@
 #include "funciones.h"
 
 
+
 void inventario(char productos[10][40], float precios[10], int cantidad[10]) {
     for (int i = 0; i < 10; i++) {
        printf("Ingrese el nombre del Producto %d: ", i+1);

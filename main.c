@@ -15,6 +15,7 @@ int main() {
     }
 
 
+
     buscarProducto(productos, precios, cantidad, productoBuscar);  
 
     return 0;
